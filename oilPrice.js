@@ -1,3 +1,5 @@
+//a function that will return the price of different type of oil
+
 function oilPrice(disealQuantity, patrolQuantity, octenQuantity){
 
     disealPrice = 114;
@@ -10,11 +12,16 @@ function oilPrice(disealQuantity, patrolQuantity, octenQuantity){
 
     totalPriceOfAll = totaldisealPrice +  totalOctenPrice + totalPetrolPrice;
 
+
+    if(typeof disealQuantity !== 'number' || typeof patrolQuantity !== 'number' || typeof octenQuantity !== 'number'){
+        return  ('Please Enter a Number')
+     }
+
     return totalPriceOfAll;
 
 
 }
 
-const getPrice = oilPrice(0,2,3)
+const getPrice = oilPrice(6,2,3)
 
 console.log(getPrice);

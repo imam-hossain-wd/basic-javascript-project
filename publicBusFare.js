@@ -1,3 +1,5 @@
+//a function that will return  rest passenger tricket cost 
+
 function publicBusFare(passenger){
   
    const busSit = 50;
@@ -10,6 +12,11 @@ function publicBusFare(passenger){
         carneed = Math.floor((passenger % busSit) / microbusSit);
         restPassenger = (passenger % busSit) % microbusSit;
         totalPublicBusCost = publicBusTricketPrice * restPassenger;
+
+
+        if(typeof passenger !== 'number' ){
+            return  ('Please Enter a number')
+         }
     
 
     // console.log('bus need : ',busneed);
@@ -21,6 +28,5 @@ function publicBusFare(passenger){
 
 }
 
-
-const publicTransportCost = publicBusFare(235);
+const publicTransportCost = publicBusFare(240);
 console.log(publicTransportCost);
