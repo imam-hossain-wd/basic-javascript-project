@@ -1,5 +1,4 @@
 
-
 // a function that check is it best friend or not
 // if it is bestfriend will return true and false of object 
 
@@ -12,14 +11,17 @@ const  isbestFriendCheck = person1.name === person2.friend  &&
                           person1.friend === person2.name;
            
        if(typeof obj1 !== 'object' || typeof obj2 !== 'object'){
-          return  ('Please Enter a object')
+          return  ('Please Enter a function perameter value')
        }                   
 
-     return  isbestFriendCheck
+     return  isbestFriendCheck;
 }
 
 const result = isBestFriend(person1 ,person2);
 console.log(result);
+
+
+// isBestFriend function end 
 
 
 

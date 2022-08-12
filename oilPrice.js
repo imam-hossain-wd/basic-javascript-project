@@ -8,7 +8,7 @@ function oilPrice(disealQuantity, patrolQuantity, octenQuantity){
 
     totaldisealPrice =  disealQuantity * disealPrice;
     totalPetrolPrice =  patrolQuantity * patrolPrice;
-    totalOctenPrice  =  octenQuantity * octenPrice;
+    totalOctenPrice  =  octenQuantity  * octenPrice;
 
     totalPriceOfAll = totaldisealPrice +  totalOctenPrice + totalPetrolPrice;
 
@@ -22,6 +22,8 @@ function oilPrice(disealQuantity, patrolQuantity, octenQuantity){
 
 }
 
-const getPrice = oilPrice(6,2,3)
+const getPrice = oilPrice(12,2,3);
 
 console.log(getPrice);
+
+//oilPrice function end

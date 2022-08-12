@@ -17,16 +17,13 @@ function publicBusFare(passenger){
         if(typeof passenger !== 'number' ){
             return  ('Please Enter a number')
          }
-    
-
-    // console.log('bus need : ',busneed);
-    // console.log('microbus need : ',carneed);
-    // console.log(restPassenger);
-    // console.log('Total Public Bus cost : ',totalPublicBusCost );
 
     return totalPublicBusCost;
 
 }
 
-const publicTransportCost = publicBusFare(240);
+const publicTransportCost = publicBusFare(2,5,7);
 console.log(publicTransportCost);
+
+
+// publicBusFare function end
